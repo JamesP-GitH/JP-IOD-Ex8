@@ -1,29 +1,40 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: whitesmoke;
+    background: #ECECEC;
     justify-content: center;
     align-items: center;
+    display: flex;
+    height: 50vh;
+}
+
+h1 {
+    color: #212529;
 }
 
 .cont {
-    background: white;
+    background: #dee2e6;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 #selectDice, #rollButton {
+    color: #343a40;
     padding: 10px;
     margin: 10px;
     font-size: 24px;
+    background: #e9ecef;
 }
 
 label {
     font-size: 24px;
+    color: #343a40;
 }
 
 #result {
     font-size: 32px;
     font-weight: bold;
     margin-top: 20px;
+    color: #212529;
 }
