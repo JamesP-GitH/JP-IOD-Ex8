@@ -1,15 +1,13 @@
 // Main Roll Dice Function
 function rollDice(numSides) {
-    return Math.floor(Math.random() * numSides) + 1;    
+    return Math.floor(Math.random() * numSides) + 1;
 }
 
 function rollFromSelection() {
     const sides = document.getElementById("selectDice").value;
-    const result = Math.floor(Math.random() * sides) + 1
-    document.getElementById("result").textContent = result
+    const result = Math.floor(Math.random() * sides) + 1;
+    document.getElementById("result").textContent = result;
 }
-
-
 
 // Test 4 sided dice roll
 function testDice4() {
@@ -20,7 +18,7 @@ function testDice4() {
             throw new Error("Test Failed for 4 sided dice roll: got " + result);
         }
     }
-    console.log("All test rolls passed for 4 sided dice")
+    console.log("All test rolls passed for 4 sided dice");
 }
 
 // Test 6 sided dice roll
@@ -32,7 +30,7 @@ function testDice6() {
             throw new Error("Test Failed for 6 sided dice roll: got " + result);
         }
     }
-    console.log("All test rolls passed for 6 sided dice")
+    console.log("All test rolls passed for 6 sided dice");
 }
 
 // Test 8 sided dice roll
@@ -44,7 +42,7 @@ function testDice8() {
             throw new Error("Test Failed for 8 sided dice roll: got " + result);
         }
     }
-    console.log("All test rolls passed for 8 sided dice")
+    console.log("All test rolls passed for 8 sided dice");
 }
 
 // Test 10 sided dice roll
@@ -53,10 +51,12 @@ function testDice10() {
     for (let i = 0; i < numRolls; i++) {
         const result = rollDice(10);
         if (result < 1 || result > 10) {
-            throw new Error("Test Failed for 10 sided dice roll: got " + result);
+            throw new Error(
+                "Test Failed for 10 sided dice roll: got " + result
+            );
         }
     }
-    console.log("All test rolls passed for 10 sided dice")
+    console.log("All test rolls passed for 10 sided dice");
 }
 
 // Test 12 sided dice roll
@@ -65,10 +65,12 @@ function testDice12() {
     for (let i = 0; i < numRolls; i++) {
         const result = rollDice(12);
         if (result < 1 || result > 12) {
-            throw new Error("Test Failed for 12 sided dice roll: got " + result);
+            throw new Error(
+                "Test Failed for 12 sided dice roll: got " + result
+            );
         }
     }
-    console.log("All test rolls passed for 12 sided dice")
+    console.log("All test rolls passed for 12 sided dice");
 }
 
 // Test 20 sided dice roll
@@ -77,10 +79,12 @@ function testDice20() {
     for (let i = 0; i < numRolls; i++) {
         const result = rollDice(20);
         if (result < 1 || result > 20) {
-            throw new Error("Test Failed for 20 sided dice roll: got " + result);
+            throw new Error(
+                "Test Failed for 20 sided dice roll: got " + result
+            );
         }
     }
-    console.log("All test rolls passed for 20 sided dice")
+    console.log("All test rolls passed for 20 sided dice");
 }
 
 testDice4();
