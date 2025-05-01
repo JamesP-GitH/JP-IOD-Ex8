@@ -1,0 +1,6 @@
+USER STORY: DICE GENERATOR
+
+As a user, I want to be able to select a dice type (D4, D6, D8, D10, D12, D20) from a dropdown, 
+click a "Roll Dice" button, and see the random result displayed on the screen, so that I can 
+simulate rolling a dice for my tabletop games. The page should be easy to use, allow multiple 
+rolls, and be clear the function of each feature.
