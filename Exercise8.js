@@ -1,7 +1,15 @@
 // Main Roll Dice Function
 function rollDice(numSides) {
-    return Math.floor(Math.random() * numSides) + 1;
+    return Math.floor(Math.random() * numSides) + 1;    
 }
+
+function rollFromSelection() {
+    const sides = document.getElementById("selectDice").value;
+    const result = Math.floor(Math.random() * sides) + 1
+    document.getElementById("result").textContent = result
+}
+
+
 
 // Test 4 sided dice roll
 function testDice4() {
