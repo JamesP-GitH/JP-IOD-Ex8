@@ -1,0 +1,12 @@
+body {
+    background: whitesmoke;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont {
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+}
