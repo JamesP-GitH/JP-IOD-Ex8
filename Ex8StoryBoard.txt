@@ -1,0 +1,15 @@
+Simple Storyboard : Dice Generator
+
+Primary Actor: User
+Secondary Actor: Dice Generator system backend/logic
+Description: The user interacts with the dice generator by selecting the dice type, 
+rolling the dice, and viewing the result.
+
+Storyboard Flow:
+1. User lands on Dice Generator page.
+2. User selects dice from dropdown menu.
+3. User clicks Roll button.
+4. Backend generates random result based on number of sides of dice selected.
+5. Page displays the result of the roll.
+6. User clicks Roll button again for new result.
+7. Result is updated with new roll result.
